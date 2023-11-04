@@ -9,7 +9,146 @@
     <link rel="stylesheet" href="./css/estilos.css">
 </head>
 <body>
-    <h1>Hola mundo</h1>
+   <header class="hero">
+        <nav class="nav container">
+            <div class="nav__logo">
+                <h2 class="nav__title">La Esquina del Adobo.</h2>
+            </div>
+            <ul class="nav__link nav__link--menu">
+                <li class="nav__items">
+                    <a href="#" class="nav__links">Inicio</a>
+                </li>
+                <li class="nav__items">
+                    <a href="#" class="nav__links">Nuestro Servicios</a>
+                </li>
+                <li class="nav__items">
+                    <a href="#" class="nav__links">Reconocimiento</a>
+                </li>
+                <li class="nav__items">
+                    <a href="#" class="nav__links">Promociones</a>
+                </li>
+                <li class="nav__items">
+                    <a href="#" class="nav__links">Nosotros</a>
+                </li>
+                <img src="./images/close.svg" class="nav__close">
+            </ul>
+            <div class="nav__menu">
+                <img src="./images/menu.svg" class="nav__img">
+            </div>
+        </nav>
+        <section class="hero__container container">
+            <h1 class="hero__title">Adobo Arequipeño</h1>
+            <p class="hero_paragraph">Te invitamos a disfrutar de nuestro delicioso adobo al estilo arequipeño y puedas disfrutar de un momento familiar.</p>
+            
+        </section>
+    </header>
     
+    <main>
+        <section class="container about">
+            <h2 class="subtitle">Nuestros Servicios</h2>
+            <p class="about_paragraph">Nuestros platos salen preparados y presentados de igual forma, lo que hace que este servicios resulte bastante vistoso</p>
+            <div class="about__main">
+                <article class="about__icons">
+                    <img src="./images/car.svg" class="about__icon">
+                    <h3 class="about__title">Envios a Domicilio</h3>
+                    <p class="about_paragraph">Nuestros Servicios son enviados a todo Arequipa.</p>
+                </article>
+
+                <article class="about__icons">
+                    <img src="./images/happy.svg" class="about__icon">
+                    <h3 class="about__title">Platos tipicos</h3>
+                    <p class="about_paragraph">Nuestro plato representarivo es el Abodo Arequipeño.</p>
+                </article>
+
+                <article class="about__icons">
+                    <img src="./images/dollar.svg" class="about__icon">
+                    <h3 class="about__title">Pagos Digitales</h3>
+                    <p class="about_paragraph">Contamos con diversas formas de pagos digitales.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="knowledge">
+            <div class="knowledge__container container">
+                <div class="knowledege__texts">
+                    <h2 class="subtitle">Reconocimiento</h2>
+                    <p class="knowledge_paragraph">Somos un restaurant de platos tipicos reconocidos, a nivel local en la ciudad de Arequipa.
+                        hemos participado en eventos gastronomicos como Mistura y Ferias Gastronomicas en el Perú, con nuestro plato
+                        tipico a base de carne de cerdo, concho de chicha de guiñapo y especias.
+                    </p>
+
+                </div>
+                <figure class="knowledge__picture">
+                    <img src="./images/adoboaqp.jpg" class="knowledge__img">
+                </figure>
+            </div>
+        </section>
+
+        <section class="price container">
+            <h2 class="subtitle"> Promociones</h2>
+
+            <div class="price__table">
+                <div class="price__element">
+                    <p class="price__name">Oferta</p>
+                    <h3 class="price__price">1 Pan Gratis</h3>
+
+                    <div class="price__items">
+                        <p class="price__features">3 adobos</p>
+                        <p class="price__features">Traes tu plato o taper</p>
+                    </div>
+                </div>
+
+                <div class="price__element price__element--best">
+                    <p class="price__name">Super Oferta</p>
+                    <h3 class="price__price">2 Panes Gratis</h3>
+
+                    <div class="price__items">
+                        <p class="price__features">3 adobos</p>
+                        <p class="price__features">Via delivery</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="testimony">
+            <div class="testimony_container container">
+                <img src="./images/left.svg" class="testimony_arrow" id="before">
+                <section class="testimony__body testimony__body--show" data-id=""1>
+                    <div class="testimony__texts">
+                        <h2 class="subtitle">Mision</h2>
+                        <p class="testimony_review"> Proveer a nuestros clientes la mayor experiencia gastronómica en base al adobo arequipeño, ofreciendo un concepto único e integral de alimentos que cumplan las expectativas de nuestros clientes</p>
+                    </div>
+                    <figure class="testimony_picture">
+                        <img src="./images/nosotros.jpg" class="testimony_img">
+                    </figure>
+                </section>
+
+                <section class="testimony__body" data-id=""2>
+                    <div class="testimony__texts">
+                        <h2 class="subtitle">Vision</h2>
+                        <p class="testimony_review"> Brindamos un servicios de calidad a nuestros comenzales</p>
+                    </div>
+                    <figure class="testimony_picture">
+                        <img src="./images/participacion.jpg" class="testimony_img">
+                    </figure>
+                </section>
+
+                <section class="testimony__body" data-id=""3>
+                    <div class="testimony__texts">
+                        <h2 class="subtitle">Testimonio</h2>
+                        <p class="testimony_review"> Soy un Julio Ernesto Granda, Jugador de ajedrez y tenido el agrado de degustar estos platos tipicos,
+                            para lo cual les recomiendo visitar La Esquina del Adobo.
+                        </p>
+                    </div>
+                    <figure class="testimony_picture">
+                        <img src="./images/testimonio.jpg" class="testimony_img">
+                    </figure>
+                </section>
+                
+                <img src="./images/rigth.svg" class="testimony__arrow" id="next">
+            </div>
+        </section>
+    </main>
+    <script src="./js/slider.js"></script>
 </body>
 </html>
